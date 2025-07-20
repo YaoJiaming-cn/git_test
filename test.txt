@@ -5,3 +5,22 @@ git config --global user.email "your email"
 ssh-keygen -t rsa -C "your email"(生成密钥)
 
 密钥默认位置：C:\Users\a1867/.ssh/id_rsa
+
+ssh -T git@github.com (测试连接）
+
+git init 新建日记本（初始化仓库）
+git add 文件名 （添加文件到暂存区）
+git add . (添加所有文件到暂存区）
+git commit -m "提交说明" （提交到本地仓库）
+git remote add origin https://github.com/Luoxiiiiiiii/git_test.git （将本地仓库与远程仓库建立连接）
+git remote add origin git@github.com:Luoxiiiiiiii/git_test.git（将本地仓库与远程仓库建立连接，SSH地址）
+git push -u origin main （推送到origin main分支）
+git push (推送到上一次设置的仓库和分支）
+
+git branch （查看所有分支以及当前分支）
+git branch -M 名字 （修改当前分支名字为“名字”）
+
+git remote -v （查看当前远程仓库地址）
+git remote remove origin （删除现有远程仓库配置）
+
+git remote remove origin （删除旧的远程仓库配置）
