@@ -16,3 +16,8 @@ conda install jupyter notebook ipykernel （jupyter交互的库）
 python -m ipykernel install --user --name=环境名 --display-name="Python (内核名)" （将名字为“环境名”的环境注册为jupyter上名字为“内核名”的内核）
 jupyter kernelspec list （列出jupyter上所有注册的内核）
 jupyter kernelspec remove 内核名 （删除名字为“内核名”的内核）
+
+fc-list 查看有哪些字体
+fc-list :lang=zh 查看支持的中文字体
+
+nvcc --version 查看是否安装cuda

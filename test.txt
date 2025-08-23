@@ -29,3 +29,13 @@ git remote remove origin （删除旧的远程仓库配置）
 New-Item .gitignore -ItemType File （创建 .gitignore 文件，用来忽视某些文件不要上传到仓库）
 eg：.ipynb_checkpoints/
 *-checkpoint.ipynb（忽略 Jupyter 的检查点文件夹和文件）
+
+
+#一个大文件已经push后的补救方案（本地已删除）
+"""
+git rm --cached $(git ls-files --deleted)  # 清理暂存区中的大文件
+git commit -m "Remove deleted files from staging area"  # 提交更改
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch *.pdf" --prune-empty --tag-name-filter cat -- --all  # 清理历史中的大文件
+git push --force  # 强制推送更新到远程仓库
+
+"""
