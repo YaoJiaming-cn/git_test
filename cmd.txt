@@ -20,4 +20,4 @@ jupyter kernelspec remove 内核名 （删除名字为“内核名”的内核�
 fc-list 查看有哪些字体
 fc-list :lang=zh 查看支持的中文字体
 
-nvcc --version 查看是否安装cuda
+nvcc --version (或nvcc -V)查看是否安装cuda
