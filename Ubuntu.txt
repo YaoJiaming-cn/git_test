@@ -1,0 +1,3 @@
+chmod +x 文件名 添加权限
+ls -l /usr/local/ | grep cuda 查看cuda版本
+ls -l /usr/local/cuda 查看cuda版本
